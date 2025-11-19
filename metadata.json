@@ -1,0 +1,5 @@
+{
+  "name": "Pocki",
+  "description": "A non-custodial crypto wallet for the Ethereum Sepolia testnet, built with React and ethers.js. Manage your digital assets with a focus on security and user experience.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+:root {
+  --color-primary: #007aff; /* Apple Blue */
+  --color-primary-hover: #0056b3;
+  --color-accent: #ff9f0a; /* Apple Orange - Vibrant */
+  --color-accent-hover: #e68f09;
+  --color-background: #ffffff; /* Pure white for desktop bg */
+  --color-surface: #ffffff;
+  --color-surface-light: #f2f2f7; /* iOS-like card/input background */
+  --color-text-primary: #000000;
+  --color-text-secondary: #8A8A8E;
+  --color-separator: #E5E5E5;
+}
+
+html.dark {
+  --color-primary: #0a84ff;
+  --color-primary-hover: #339aff;
+  --color-accent: #ff9f0a;
+  --color-accent-hover: #e68f09;
+  --color-background: #000000;
+  --color-surface: #000000; /* Pure black */
+  --color-surface-light: #1c1c1e;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #8e8e93;
+  --color-separator: #2c2c2e;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html, body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
