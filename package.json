@@ -1,14 +1,20 @@
 {
   "name": "pocki-wallet",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cap:sync": "cap sync",
+    "cap:open:android": "cap open android",
+    "cap:open:ios": "cap open ios"
   },
   "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0",
     "crypto-js": "^4.2.0",
     "ethers": "^6.13.1",
     "gsap": "^3.12.5",
@@ -19,6 +25,7 @@
     "three": "^0.167.0"
   },
   "devDependencies": {
+    "@capacitor/cli": "^6.0.0",
     "@types/crypto-js": "^4.2.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

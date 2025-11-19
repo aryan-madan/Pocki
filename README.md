@@ -33,4 +33,4 @@ a non-custodial crypto wallet for the ethereum sepolia testnet. built with a foc
 
 ## license
 
-gnu gpl 3
+mit
